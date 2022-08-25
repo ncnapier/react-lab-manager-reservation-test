@@ -1,6 +1,6 @@
 # Game Scheduler APP
 
-A simple app for scheduling rugby games- will be integrated into the Open-Play app. Teams will be able to view, schedule, change upcoming games. 
+Test builds for a Lab-Manager 2.0- a complete resdesign of form and features. Built with React, SQL, and utilizing OOP concepts. 
 
 ## Tech Used:
 
