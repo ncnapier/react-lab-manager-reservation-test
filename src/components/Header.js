@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import Button from './Button'
 import Team from './Team'
 import Lion from './Lion'
+import App from '../App'
 
 const Header = ({title, onAdd, showAdd}) =>{
 
@@ -15,7 +16,7 @@ const Header = ({title, onAdd, showAdd}) =>{
 }
 
 Header.defaultProps = {
-    title: '4500',
+    title: "4500"
 }
 Header.propTypes = {
     title: PropTypes.string.isRequired,

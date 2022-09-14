@@ -97,7 +97,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+.hide {
+  display: none;
+}
 .add-form {
   margin-bottom: 40px;
 }

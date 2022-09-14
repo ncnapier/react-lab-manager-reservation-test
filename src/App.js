@@ -30,8 +30,9 @@ const toggleReminder = (id) => {
 }
 
   return (
+    <section>
     <div>
-    < section className="container">
+    < section className="container" id="4500">
      <Header onAdd={()=>setShowAddTask (!showAddTask)} showAdd={showAddTask}/>
      {showAddTask && <AddTask onAdd={addTask}/>}
      <h2 style={{color: Lion.defaultProps.color3, alignItems: 'center', textAlign: 'center'}}>Scheduled Runs</h2>
@@ -41,7 +42,24 @@ const toggleReminder = (id) => {
     </section>
     <Footer />
     </div>
+    
+    <div className='hide'>
+    < section className="container" id="5500">
+     <Header onAdd={()=>setShowAddTask (!showAddTask)} showAdd={showAddTask}/>
+     {showAddTask && <AddTask onAdd={addTask}/>}
+     <h2 style={{color: Lion.defaultProps.color3, alignItems: 'center', textAlign: 'center'}}>Scheduled Runs</h2>
+     {tasks.length > 0 ?<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> :
+     'No Runs To Show'}
+     
+    </section>
+    <Footer />
+    </div>
+    </section>
+    
   );
 }
-
+App.defaultProps = {
+  header1: "4500",
+  header2: "5500"
+}
 export default App;
