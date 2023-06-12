@@ -1,4 +1,4 @@
-# Game Scheduler APP
+# Instrument Scheduler APP
 
 Test builds for a Lab-Manager 2.0- a complete resdesign of form and features. Built with React, SQL, and utilizing OOP concepts. 
 
